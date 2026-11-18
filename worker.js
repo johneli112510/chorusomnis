@@ -88,7 +88,7 @@ function ytFrom(raw) {
 // ---------- accounts, sessions, approval ----------
 // Members live in R2 as users/<id>.json (id = first 32 hex chars of SHA-256 of the email).
 // Sessions are signed cookies (HMAC keyed from ADMIN_PASSWORD). Changing ADMIN_PASSWORD signs everyone out.
-const PBKDF2_ITER = 100000; // Workers' maximum. Lower it BEFORE anyone registers if you hit CPU-limit errors on the Free plan.
+const PBKDF2_ITER = 20000; // Workers' maximum. Lower it BEFORE anyone registers if you hit CPU-limit errors on the Free plan.
 const MAX_USERS = 300;
 const COOKIE = "co_session";
 const DUMMY_SALT = "AAAAAAAAAAAAAAAAAAAAAA";

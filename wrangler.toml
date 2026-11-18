@@ -1,6 +1,6 @@
 name = "chorusomnis"
 main = "worker.js"
-compatibility_date = "2026-11-01"
+compatibility_date = "2026-11-18"
 
 [[r2_buckets]]
 binding = "BUCKET"
